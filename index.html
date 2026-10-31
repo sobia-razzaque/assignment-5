@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red & Black Calculator</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin-top:80px;
+}
+
+.calculator {
+    background-color: #000000;
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid red;
+    box-shadow: 0 0 20px red;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.display {
+     background-color: #333333;
+    color: white;
+    height: 60px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-align: right;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 55px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #222222;
+    color: white;
+}
+
+button:hover {
+    background-color: red;
+}
+
+button:nth-child(4n) {
+    background-color: #B30000;
+}
+
+button:nth-child(4n):hover {
+    background-color: #FF0000;
+}
+
+.equal {
+    background-color: red;
+    grid-column: span 2;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+
+        <h2>Calculator</h2>
+
+        <div class="display">0</div>
+
+        <div class="buttons">
+
+            <button>C</button>
+            <button>DEL</button>
+            <button>%</button>
+            <button>/</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>*</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+
+            <button>0</button>
+            <button>.</button>
+            <button class="equal">=</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
